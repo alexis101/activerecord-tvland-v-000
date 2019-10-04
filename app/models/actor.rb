@@ -4,6 +4,6 @@ class Actor < ActiveRecord::Base
 
 
 def full_name
-  self.fist_name.last_name.join(" ")
+  self = Actor.new(first_name: last_name:)
   end
 end
